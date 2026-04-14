@@ -1,0 +1,27 @@
+# Obsidian runtime artifacts — user-specific state, must not be committed.
+# The tracked files under .obsidian/ are the minimal vault scaffold;
+# anything Obsidian generates at runtime stays local.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/hotkeys.json
+.obsidian/cache
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/snippets/
+.obsidian/*.backup
+
+# Obsidian trash
+.trash/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
