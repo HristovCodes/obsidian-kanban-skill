@@ -61,7 +61,7 @@ If you are here to use the skill, start with `SKILL.md`. If you are here to main
 3. **`example_board/` is a scaffold, not a real board.** Its content (auth feature with users/sessions/login) is placeholder demonstration material. When editing it, keep the content:
    - Generic and recognizable to any web-app team (avoid niche tech).
    - Consistent across the board, context, and issue files (same decisions, same file names).
-   - Free of any non-English text and free of any real project references.
+   - Free of any real project references.
 
 4. **Do not bundle plugin binaries.** `.obsidian/plugins/obsidian-kanban/` must stay absent. The skill depends on users installing the plugin via the Obsidian UI (steps live in `README.md`). Bundling the ~1 MB binaries bloats the repo and ties it to a specific plugin version.
 
@@ -106,14 +106,12 @@ If you are here to use the skill, start with `SKILL.md`. If you are here to main
 - Do not add host-project-specific examples to SKILL.md or the scaffold.
 - Do not introduce a SKILL.md rule that is not also demonstrated or at least consistent with `example_board/`.
 - Do not commit plugin binaries under `.obsidian/plugins/`.
-- Do not translate or localize any content — the skill is English-only.
 - Do not edit `kanban-guides/` content.
 
 ## Verification
 
 After making changes, run these sanity checks:
 
-- `grep -rE '[А-Яа-яЁё]' .` → no matches (no Cyrillic / non-English leakage).
 - `ls example_board/example_board.md` exists and begins with `---\nkanban-plugin: board\n---`.
 - SKILL.md's file-structure diagram matches the actual layout of `example_board/`.
 - SETUP.md's verification tree matches what its copy commands would produce.
